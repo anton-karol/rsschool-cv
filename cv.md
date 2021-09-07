@@ -15,3 +15,17 @@ I am learning Javascript.
 * JavaScript (basic)
 * HTML
 * CSS
+
+## Code example
+
+```javascript
+function countCats(matrix) {
+  let catCount = 0;
+  for (let y of matrix) {
+    for (let x of y) {
+      if (x === "^^") catCount++;
+    }
+  }
+  return catCount++;
+}
+```
