@@ -29,3 +29,11 @@ function countCats(matrix) {
   return catCount++;
 }
 ```
+
+## Education
+
+* [The Modern JavaScript Tutorial](https://javascript.info/)
+
+## English
+
+* [C2 Proficient](https://www.efset.org/cert/wDpJho)
