@@ -33,19 +33,39 @@ a:hover {
   background-color: white;
 }
 /*=====nav menu======*/
-nav {
+.nav-menu {
   padding: 32px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
-nav ul {
+.nav-button {
+  display: none;
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+.nav-button::before {
+  background: transparent url(../images/menu.svg) 0 0 no-repeat;
+  background-size: 32px;
+  content: "";
+  display: block;
+  height: 32px;
+  width: 32px;
+}
+.nav-menu-list {
   display: flex;
-  gap: 12px;
-  justify-content: space-between;
+  flex-direction: row;
+  gap: 24px;
   text-transform: uppercase;
 }
+
 nav a {
   color: var(--main-color);
+  text-decoration: none;
 }
+
 /*=====column=====*/
 .column-right {
   min-width: 30%;
@@ -136,8 +156,19 @@ footer a:hover {
     flex-direction: column;
     align-items: center;
   }
-  nav {
-    /*здесь будет бургер меню (а может и не будет)*/
+
+  /*responsive(kinda) nav menu*/
+  .nav-menu-list {
     display: none;
+  }
+  .nav-button {
+    display: block;
+  }
+  .show {
+    display: flex !important;
+    flex-direction: column;
+  }
+  .toggled::before {
+    background-image: url(../images/menu_open.svg);
   }
 }
