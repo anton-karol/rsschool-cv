@@ -2,19 +2,19 @@
 
 ## Contact information
 
-* Telegram: @lw974
-* Discord: @lw974#3069
-* E-mail: anton.karol@gmail.com
+- Telegram: @lw974
+- Discord: @lw974#3069
+- E-mail: anton.karol@gmail.com
 
 ## About me
 
-I am learning Javascript.
+I am learning JavaScript.
 
 ## Skills
 
-* JavaScript (basic)
-* HTML
-* CSS
+- JavaScript (Basic)
+- HTML
+- CSS
 
 ## Code example
 
@@ -32,8 +32,8 @@ function countCats(matrix) {
 
 ## Education
 
-* [The Modern JavaScript Tutorial](https://javascript.info/)
+- [The Modern JavaScript Tutorial (Part 1)](https://javascript.info/)
 
 ## English
 
-* [C2 Proficient](https://www.efset.org/cert/wDpJho)
+- [C2 Proficient](https://www.efset.org/cert/wDpJho)

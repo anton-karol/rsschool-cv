@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anton Karol</title>
+  <link rel="shortcut icon" type="image/icon" href="images/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="stylesheet" href="styles/default.min.css">
+  <script src="scripts/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+  <script src="scripts/script.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <nav class="nav-menu">
+      <button id="top-nav-button" class="nav-button" type="button" onclick="toggleNavMenu()"></button>
+      <ul id="top-nav-menu-list"class="nav-menu-list">
+        <li>
+          <a href="#about_me">About Me</a>
+        </li>
+        <li>
+          <a href="#education">Education</a>
+        </li>
+        <li>
+          <a href="#code_example">Code Example</a>
+        </li>
+        <li>
+          <a href="#skills">Skills</a>
+        </li>
+        <li>
+          <a href="#languages">Languages</a>
+        </li>
+      </ul>
+    </nav>
+
+    <header>
+      <div class="header-right-section column-right">
+        <figure>
+          <img src="images/avatar.png" alt="avatar.png" width="200" height="200" />
+        </figure>
+      </div>
+
+      <div class="header-left-section column-left">
+        <h1>Anton Karol</h1>
+        <h2>Front-end Developer</h2>
+        <address>
+          <ul>
+            <li>
+              <img src="images/place.svg" alt="place.svg" />Minsk, Belarus
+            </li>
+            <li>
+              <img src="images/phone.svg" alt="phone.svg" />+375<span class="blurry-text">PLACEHOLDER</span>
+            </li>
+            <li>
+              <a href="http://t.me/lw974"><img src="images/telegram.svg" alt="telegram.svg" />t.me/lw974</a>
+            </li>
+            <li>
+              <a href="mailto:anton.karol@gmail.com"><img src="images/email.svg"
+                  alt="email.svg" />anton.karol@gmail.com</a>
+            </li>
+          </ul>
+        </address>
+      </div>
+    </header>
+
+    <main>
+      <div class="main-right-section column-right">
+        <section id="skills">
+          <h3>Skills</h3>
+          <ul>
+            <li>JavaScript</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Visual Studio Code</li>
+          </ul>
+        </section>
+
+        <section id="languages">
+          <h3>Languages</h3>
+          <ul>
+            <li>
+              <p>Russian</p>
+              <p class="language-level">Native</p>
+            </li>
+            <li>
+              <p>English</p>
+              <p class="language-level">Proficient C1+</p>
+            </li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="main-left-section column-left">
+        <section id="about_me">
+          <h3>About Me</h3>
+          <p>
+            Just a guy learning front-end development.
+          </p>
+        </section>
+
+        <section id="education">
+          <h3>Education</h3>
+          <ul>
+            <li>
+              <p><a href="https://javascript.info/">The Modern JavaScript Tutorial</a></p>
+              <p class="education-time">2021</p>
+            </li>
+            <li>
+              <p>Belarusian State University of Informatics and Radioelectronics </p>
+              <p class="education-time">2013 - 2015</p>
+            </li>
+            <li>
+              <p>Minsk Radioengineering College</p>
+              <p class="education-time">2009 - 2013</p>
+            </li>
+          </ul>
+        </section>
+
+        <section id="code_example">
+          <h3>Code example</h3>
+          <pre><code class="language-javascript">function countCats(matrix) {
+  let catCount = 0;
+  for (let y of matrix) {
+    for (let x of y) {
+      if (x === "^^") 
+        catCount++;
+    }
+  }
+  return catCount++;
+}</code></pre>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div>
+        <a href="https://rs.school/js/"><img src="images/rs_school_js.svg" height="24"
+            alt="JS Course · Rolling Scopes School" title="JS Course · Rolling Scopes School" /></a>
+        <a href="https://github.com/anton-karol"><img src="images/github.svg" height="24" width="24" alt="My GitHub"
+            title="My GitHub" /></a>
+      </div>
+      © 2021
+    </footer>
+  </div>
+</body>
+
+</html>
