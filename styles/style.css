@@ -28,48 +28,50 @@ a:hover {
   color: var(--accent-color);
 }
 .container {
-  max-width: 960px;
+  max-width: 900px;
   margin: 0 auto;
-  background-color: white;
+  padding: 0 16px;
 }
 /*=====nav menu======*/
 .nav-menu {
+  white-space: nowrap;
   padding: 32px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 .nav-button {
   display: none;
-  position: absolute;
-  right: 16px;
-  top: 16px;
   background: none;
+  position: absolute;
+  top: 16px;
+  right: 16px;
   border: 0;
   cursor: pointer;
 }
 .nav-button::before {
-  background: transparent url(../images/menu.svg) 0 0 no-repeat;
-  background-size: 32px;
-  content: "";
   display: block;
   height: 32px;
   width: 32px;
+  background: transparent url(../images/menu.svg) 0 0 no-repeat;
+  background-size: 32px;
+  content: "";
 }
 .nav-menu-list {
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
   gap: 24px;
   text-transform: uppercase;
 }
-
-nav a {
-  color: var(--main-color);
+.nav-menu-list a {
   text-decoration: none;
 }
-
-/*=====column=====*/
+/*=====columns=====*/
 .column-right {
   min-width: 30%;
   margin-left: 32px;
+}
+.column-left {
+  min-width: 70%;
 }
 /*=====header=====*/
 header {
@@ -77,6 +79,7 @@ header {
   flex-direction: row-reverse;
   justify-content: space-between;
   padding: 32px;
+  margin-top:32px;
 }
 figure {
   text-align: center;
@@ -84,6 +87,7 @@ figure {
 }
 figure img {
   border-radius: 50%;
+  filter:grayscale(1);
 }
 h2 {
   color: var(--accent-color);
@@ -95,9 +99,6 @@ address {
 address img {
   vertical-align: middle;
   margin-right: 5px;
-}
-address a {
-  color: var(--main-color);
 }
 .blurry-text {
   filter: blur(4px);
