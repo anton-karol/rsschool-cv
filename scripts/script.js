@@ -11,7 +11,7 @@ function toggleNavMenu() {
 }
 
 console.log(` 
-  Score: 120 / 150
+  Score: 130 / 150
   +10 вёрстка валидная 
   +20 вёрстка семантическая (nav, header, figure, main, section, footer, time, h1, h2, h3) 
   +10 для оформления СV используются css-стили 
